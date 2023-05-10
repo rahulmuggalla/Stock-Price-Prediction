@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Price Prediction Result</title>
+</head>
+<body>
+    <h1>Stock Price Prediction Result</h1>
+    <p>Stock Name: {{ stock_name }}</p>
+    <p>Predicted Stock Prices for Next 1 Week:</p>
+    <ul>
+    {% for price in predicted_prices %}
+        <li>{{ price }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
